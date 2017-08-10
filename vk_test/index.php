@@ -6,14 +6,13 @@
 	<script type="text/javascript"> 
 		VK.init({apiId: 6140193}); 
 	</script> 
-
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	
+	<!-- bootstrap -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
 	<script src="https://use.fontawesome.com/30212a9805.js"></script>
-
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head> 
 <body> 
@@ -41,7 +40,7 @@
 			<div class="col-lg-6">
 				<div class="thumbnail text-center">
 				   	<div id="vk_auth" style="margin: 0 auto;"></div>
-				    <h3>Через PHP</h3>
+				    <h3>JS и немного PHP</h3>
 				</div>
 			</div>
 		</div>
@@ -51,9 +50,6 @@
 <script type="text/javascript">
  VK.Widgets.Auth('vk_auth', {authUrl: '/test/php.php'});
 </script>
-
-<!-- -->
-
 
 </body> 
 </html>
