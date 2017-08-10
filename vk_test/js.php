@@ -7,8 +7,9 @@
 		VK.init({apiId: 6140193}); //указываем номер приложения
 	</script> 
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	
 	<!-- бутстрап -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
 	<script src="https://use.fontawesome.com/30212a9805.js"></script>
@@ -17,7 +18,7 @@
 <body> 
 	<script type="text/javascript"> 
 		VK.Auth.login(function (response) { 
-			console.log(response);
+			//console.log(response);
 			document.getElementById('id').innerHTML=response.session.user.id; //отобразим данные в таблице
 			document.getElementById('firstname').innerHTML=response.session.user.first_name;
 			document.getElementById('lastname').innerHTML=response.session.user.last_name;
