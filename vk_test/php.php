@@ -12,9 +12,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
   <script src="https://use.fontawesome.com/30212a9805.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 </head> 
 <body>
   <header>
@@ -22,7 +19,7 @@
       <div class="row text-center">
         <div class="col-lg-12">
           <div class="well">
-            <h2 style="margin: 0;">Получим данные о пользователе с API VK через php</h2>
+            <h2 style="margin: 0;">Получим данные о пользователе с API VK через js и немного php</h2>
           </div>
         </div>
       </div>
@@ -31,7 +28,7 @@
 <div class="container">
     <div class="bs-callout bs-callout-info">
       <div class="row">      
-      <?//-- может записать в массив? 
+      <?
         $id = $_GET['uid'];
         $firstname = $_GET['first_name'];
         $lastname = $_GET['last_name'];
