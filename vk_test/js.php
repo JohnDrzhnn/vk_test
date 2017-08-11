@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html> 
 <head> 
 	<title>Данные о пользователе VK через js</title> 
@@ -133,3 +133,4 @@ function moreinfo() {
 		color: #5bc0de;
 	}
 </style>
+	
