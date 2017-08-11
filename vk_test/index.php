@@ -2,9 +2,9 @@
 <html> 
 <head> 
 	<title>Получаем данные о пользователе с API VK</title> 
-	<script src="https://vk.com/js/api/openapi.js?146" type="text/javascript"></script> 
+	<script src="https://vk.com/js/api/openapi.js?146" type="text/javascript">//--подключаем api</script> 
 	<script type="text/javascript"> 
-		VK.init({apiId: 6140193}); 
+		VK.init({apiId: 6140193}); //--указываем id приложения
 	</script> 
 	
 	<!-- bootstrap -->
@@ -39,7 +39,7 @@
 			</div>
 			<div class="col-lg-6">
 				<div class="thumbnail text-center">
-				   	<div id="vk_auth" style="margin: 0 auto;"></div>
+				   	<div id="vk_auth" style="margin: 0 auto;"></div> <!-- этот див подхватит js и выведет форму авторизации -->
 				    <h3>JS и немного PHP</h3>
 				</div>
 			</div>
@@ -48,7 +48,7 @@
 </div>
 
 <script type="text/javascript">
- VK.Widgets.Auth('vk_auth', {authUrl: '/test/php.php'});
+ VK.Widgets.Auth('vk_auth', {authUrl: '/test/php.php'}); //-- авторизация через форму вк
 </script>
 
 </body> 
