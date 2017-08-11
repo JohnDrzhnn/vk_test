@@ -27,27 +27,27 @@
 			</div>
 		</div>
 	</header>
-<div class="container">
-	<div class="row">
-		<div class="thumbnails">
-			<div class="col-lg-6">
-				<div class="thumbnail text-center">
-				    <a href="/test/js.php"><i class="fa fa-vk fa-5x" aria-hidden="true"></i></a>
-				    <h3>Через JS запрос</h3>
-				    <div class="alert alert-danger" style="margin-bottom: 12px;"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>  Всплывающие окна браузера не должны блокироваться</div>
+	<div class="container">
+		<div class="row">
+			<div class="thumbnails">
+				<div class="col-lg-6">
+					<div class="thumbnail text-center">
+						<a href="/test/js.php"><i class="fa fa-vk fa-5x" aria-hidden="true"></i></a>
+						<h3>Через JS запрос</h3>
+						<div class="alert alert-danger" style="margin-bottom: 12px;"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>  Всплывающие окна браузера не должны блокироваться</div>
+					</div>
 				</div>
-			</div>
-			<div class="col-lg-6">
-				<div class="thumbnail text-center">
-				   	<div id="vk_auth" style="margin: 0 auto;"></div> <!-- этот див подхватит js и выведет форму авторизации -->
-				    <h3>JS и немного PHP</h3>
+				<div class="col-lg-6">
+					<div class="thumbnail text-center">
+						<div id="vk_auth" style="margin: 0 auto;"></div> <!-- этот див подхватит js и выведет форму авторизации -->
+						<h3>JS и немного PHP</h3>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
-<script type="text/javascript">
+	<script type="text/javascript">
  VK.Widgets.Auth('vk_auth', {authUrl: '/test/php.php'}); //-- авторизация через форму вк
 </script>
 
