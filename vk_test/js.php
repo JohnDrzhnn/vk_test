@@ -4,7 +4,7 @@
 	<title>Данные о пользователе VK через js</title> 
 	<script src="https://vk.com/js/api/openapi.js?146" type="text/javascript">//--подключаем апи вконтакте</script> 
 	<script type="text/javascript"> 
-		VK.init({apiId: 6140193}); //указываем номер приложения
+		VK.init({apiId: 6140193}); //--указываем номер приложения
 	</script> 
 
 	
@@ -17,8 +17,11 @@
 </head> 
 <body> 
 	<script type="text/javascript"> 
-		VK.Auth.login(function (response) { 
+		VK.Auth.login(function (response) { //-- запросим информацию
 			//console.log(response);
+			if($.isEmptyObject(response.session)){ //--проверим заблокированы ли окна, если да, то объект придет пустой
+				alert ("Разблокируйте всплывающие окна!")
+			}
 			document.getElementById('id').innerHTML=response.session.user.id; //отобразим данные в таблице
 			document.getElementById('firstname').innerHTML=response.session.user.first_name;
 			document.getElementById('lastname').innerHTML=response.session.user.last_name;
